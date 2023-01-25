@@ -4,7 +4,7 @@
   "description": "chat client based on dark java magic",
   "main": "src/node/index.js",
   "scripts": {
-    "test": "ts-node src/main/node/index.ts"
+    "start": "ts-node src/main/node/index.ts"
   },
   "repository": {
     "type": "git",
