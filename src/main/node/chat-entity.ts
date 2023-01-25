@@ -17,7 +17,7 @@ export default class ChatEntity {
     private host : string;
     private port : number;
     private playername : string;
-    private hidden : boolean;
+    private hidden : boolean;//what this mean
 
     constructor(ip: string, port: number, username: string, hidden: boolean) {
         this.hidden = hidden;
@@ -32,7 +32,7 @@ export default class ChatEntity {
     }
     @Bind
     defaultListener(e: Buffer) {
-        Log.err(">", e)
+        //Log.err(">", e)
         PacketHandler.instance.handle(e);
     }
 
@@ -62,8 +62,9 @@ export default class ChatEntity {
                             setInterval(() => this.tcp.write(Buffer.from([0, 2, -2, 2])), 4900)
                         })
                     } else {
-                        setInterval(() => this.tcp.write(Buffer.from([0, 2, -2, 2])), 4900)
+                        setInterval(() => this.tcp.write(Buffer.from([0, 2, -2, 2])), 4900)//What the timout do here?
                     }
+
                 })
             }, 1000);
         }
