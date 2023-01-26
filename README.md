@@ -11,11 +11,9 @@ This has been mentally a insane amount of drugs and a complete waste of time may
 3. Run `npm run start` to execute the bots
 
 ## Features:
-UUID scrambler
-\
-multi version support
-\
-ability to spam chat (gets ratelimited)
+- UUID scrambler
+- multi version support
+- ability to spam chat (gets ratelimited)
 
 ## Customization:
 check out `src/main/node/index.ts`
