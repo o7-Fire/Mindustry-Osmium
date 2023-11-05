@@ -1,5 +1,7 @@
 # Mindustry Osmium<sup>76</sup>
 
+# PATCHED
+
 This has been mentally a insane amount of drugs and a complete waste of time maybe.
 
 ### made by Volas171 and Nekonya
