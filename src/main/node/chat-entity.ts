@@ -56,7 +56,7 @@ export default class ChatEntity {
             const p = PacketHandler.instance;
 
             setTimeout(() => {
-                this.tcp.write(p.preSend(new ConnectPacket(141.2, "official", [], this.playername, "en", new UUID().getUUID(), new UUID().getUSID(), false, 277353)), () => {
+                this.tcp.write(p.preSend(new ConnectPacket(146, "official", [], this.playername, "ru", new UUID().getUUID(), new UUID().getUSID(), false, 277353)), () => {
                     if (!this.hidden) {
                         this.tcp.write(Buffer.from([0, 4, 23, 0, 0, 0]), () => {
                             setInterval(() => this.tcp.write(Buffer.from([0, 2, -2, 2])), 4900)

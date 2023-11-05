@@ -1,3 +1,5 @@
+//Due to the nature of the IO/Packet system is made, i recommend handling SOCKS5/etc access from outside unless you want to take a wild ride at making this again
+
 import {Log, LogLevel, SuperLogHandler} from './ultimate-logger';
 import PacketHandler from "./packets/packet-handler";
 import MessagePacket from "./packets/message-packet";
@@ -55,7 +57,8 @@ for (let i = 0; i < 10000; i++) { //change this to how many bots you want to spa
         let port = parseInt(validIP[conip][(Math.random() * validIP[conip].length) | 0]);
         try {
             const en = new ChatEntity(conip, port, name, false);
-            en.sendMessage("/sync"); //specific command to lag plugins/server
+            //WARNING, UNCOMMENTING THIS WILL RENDER YOUR IP'S DOSBLACKLISTED
+            // en.sendMessage("/sync"); //specific command to lag plugins/server
         } catch (e) {
             //check if refused
             validIP[conip].splice(validIP[conip].indexOf(port), 1);

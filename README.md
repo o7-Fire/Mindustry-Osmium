@@ -1,16 +1,19 @@
 # Mindustry Osmium<sup>76</sup>
 
-# PATCHED
+# 2023/11/05 UNPATCHED 
+FOR SERVER OWNERS:
+Check if more than 2 connections from same ip and if so, ban them. 
 
 This has been mentally a insane amount of drugs and a complete waste of time maybe.
 
-### made by Volas171 and Nekonya
-(darkdustry x omegahub alliance)
+### made by Volas171
+### code reused from nekonya's version
 
 ## Setup:
 1. Have NodeJS 16+ installed
 2. Run `npm install` in the root directory
-3. Run `npm run start` to execute the bots
+3. Run `node src/main/node/index.ts (target)` to execute the bots
+4. Setup ports on index.js
 
 ## Features:
 - UUID scrambler
@@ -19,3 +22,5 @@ This has been mentally a insane amount of drugs and a complete waste of time may
 
 ## Customization:
 check out `src/main/node/index.ts`
+
+# ONLY FOR EDUCATIONAL PURPOSES, NO RESPONSABILTIY FOR ANYTHING YOU DO WITH THIS
