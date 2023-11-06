@@ -6,7 +6,7 @@
 
 This has been mentally a insane amount of drugs and a complete waste of time maybe.
 ## Fun facts:
-### Due to the nature of the atatcks being on the application layer, this is not classified as a denial of service attack, but rather a "Common Vulnerability and Exploit" proof of concept (on a regular basis this could be fixed by limiting the
+Due to the nature of the atatcks being on the application layer, this is not classified as a denial of service attack, but rather a "Common Vulnerability and Exploit" proof of concept (on a regular basis this could be fixed by limiting the
 amount of players on 1 ip)
 
 ### made by Volas171
